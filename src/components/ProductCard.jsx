@@ -1,4 +1,5 @@
 import { BsStarFill } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const ProductCard = ({product}) => {
     const {_id, name, image, brand, type, rating, price} = product
@@ -20,9 +21,9 @@ const ProductCard = ({product}) => {
               
              </div>
               
-                <div className="card actions flex justify-center gap-8">
+                <div className="card-actions flex justify-center gap-8">
                     <button className=" mt-4 btn btn-primary bg-dark border-none hover:bg-pink hover:text-dark">Details</button>
-                    <button className= "mt-4 btn btn-primary bg-dark border-none hover:bg-pink hover:text-dark">Update</button>
+                    <Link to={`/update/${_id}`}><button className= "mt-4 btn btn-primary bg-dark border-none hover:bg-pink hover:text-dark">Update</button></Link>
                 </div>
             </div>
         </div>
