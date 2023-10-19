@@ -33,7 +33,7 @@ const Header = () => {
       .catch(error => console.log(error))
    }
     return (
-        <div className="navbar bg-[#FFE4D6] mb-12 md:mb-4">
+        <div className="navbar bg-[#FFE4D6] ">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">

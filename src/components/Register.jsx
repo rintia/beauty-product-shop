@@ -60,14 +60,15 @@ const Register = () => {
 
     }
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div style={{backgroundImage: 'url(https://i.ibb.co/pn2yhk5/bg.jpg)'}} className="hero min-h-screen ">
+          <div className="hero-overlay"></div>
   <div className="hero-content flex-col ">
     <div className="text-center lg:text-left">
       <h1 className="text-5xl text-dark font-bold">Register now!</h1>
     </div>
-    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-light">
+    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-transparent">
       <form onSubmit={handleRegister} className="card-body">
-      <div className="form-control">
+      <div className="form-contro">
           <label className="label">
             <span className="label-text">Your Name</span>
           </label>
@@ -92,11 +93,13 @@ const Register = () => {
           <input type="password" name="password" placeholder="password" className="input input-bordered" required />
         </div>
         <div className="form-control mt-6">
-          <button className="btn border-none bg-dark text-light hover:bg-[#911F27] btn-primary">Register</button>
+          <button className="btn border-none bg-dark text-while (condition) {
+            
+          } hover:bg-[#D988B9] btn-primary">Register</button>
           <p className="text-center mt-4">Or</p>
-          <p className="text-center">Sign in with <button onClick={handleGoogleSignIn} className="btn text-dark btn-link">Google</button></p>
+          <p className="text-center">Sign in with <button onClick={handleGoogleSignIn} className="btn text-light btn-link">Google</button></p>
         </div>
-        <p>Already have an account? Please <Link to='/login'><button className="btn text-dark btn-link">Login</button></Link></p>
+        <p>Already have an account? Please <Link to='/login'><button className="btn text-light btn-link">Login</button></Link></p>
        
       </form>
       <ToastContainer></ToastContainer>

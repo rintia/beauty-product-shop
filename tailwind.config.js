@@ -7,7 +7,9 @@ export default {
   theme: {
     colors:{
       'dark' : '#B0578D',
-      'light' : '#FFE4D6'
+      'light' : '#FFE4D6',
+      'pink' : '#FACBEA',
+      'dark-pink' : '#D988B9'
 
     },
     fontFamily:{
