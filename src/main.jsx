@@ -13,6 +13,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import AuthProvider from './AuthProvider';
 import AddProduct from './components/AddProduct';
+import Products from './components/Products';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,11 @@ const router = createBrowserRouter([
     {
       path: '/addProduct',
       element: <AddProduct></AddProduct>
+    },
+    {
+      path : '/products/:id',
+      element : <Products></Products>,
+      loader: () => fetch('http://localhost:5000/products')
     }
    ]
   },
