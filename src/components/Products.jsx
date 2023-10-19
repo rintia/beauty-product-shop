@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import ProductCard from "./ProductCard";
+import Slider from "./Slider";
 
 
 
@@ -28,7 +29,7 @@ const Products = () => {
     console.log(selected);
     return (
         <div className="min-h-screen" >
-            {/* <h1>{brand.name}</h1> */}
+            <Slider brand={brand} ></Slider>
             <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-4 lg:px-0 gap-4 my-24">
                 {
                     selected.map(product => <ProductCard product={product}
