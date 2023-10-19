@@ -22,7 +22,7 @@ const ProductCard = ({product}) => {
              </div>
               
                 <div className="card-actions flex justify-center gap-8">
-                    <button className=" mt-4 btn btn-primary bg-dark border-none hover:bg-pink hover:text-dark">Details</button>
+                    <Link to={`/details/${_id}`}><button className=" mt-4 btn btn-primary bg-dark border-none hover:bg-pink hover:text-dark">Details</button></Link>
                     <Link to={`/update/${_id}`}><button className= "mt-4 btn btn-primary bg-dark border-none hover:bg-pink hover:text-dark">Update</button></Link>
                 </div>
             </div>
