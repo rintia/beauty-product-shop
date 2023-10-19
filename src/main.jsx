@@ -6,10 +6,21 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+import ErrorPage from './components/ErrorPage';
+import Home from './components/Home';
+import Root from './components/Root';
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
+   children : [
+    {
+      path : '/',
+      element: <Home></Home>
+    }
+   ]
   },
 ]);
 
