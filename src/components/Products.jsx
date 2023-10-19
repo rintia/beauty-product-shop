@@ -3,6 +3,8 @@ import { useLoaderData, useParams } from "react-router-dom";
 import ProductCard from "./ProductCard";
 
 
+
+
 const Products = () => {
     
     const [products, setProducts] = useState([]);
@@ -25,9 +27,9 @@ const Products = () => {
     const selected = products.filter(prod => prod.brand == brand.name);
     console.log(selected);
     return (
-        <div >
+        <div className="min-h-screen" >
             {/* <h1>{brand.name}</h1> */}
-            <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-4 md:px-0 gap-4 my-24">
+            <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-4 lg:px-0 gap-4 my-24">
                 {
                     selected.map(product => <ProductCard product={product}
                          key={product._id}></ProductCard>)
