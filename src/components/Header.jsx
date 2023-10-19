@@ -7,19 +7,25 @@ const Header = () => {
   const { user, logOut } = useContext(AuthContext)
   console.log(user);
     const navLinks = <>
-     <li> <NavLink style={({ isActive }) => ({
-            color: isActive ? "#630A10" : 'black',
-            background: isActive ? '#FCF0C8' : 'white'
+     <li > <NavLink style={({ isActive }) => ({
+            color: isActive ? "#B0578D" : 'black',
+            textDecoration: isActive ? 'underline' : 'none',
+            fontWeight : isActive ? 'semibold' : 'normal',
+            background: isActive ? 'transparent' : 'transparent'
             })}
              to='/' >Home</NavLink> </li>
     <li><NavLink style={({ isActive }) => ({
-            color: isActive ? "#630A10" : 'black',
-            background: isActive ? '#FCF0C8' : 'white'
-            })} to='/reviews'>Reviews</NavLink></li>
+            color: isActive ? "#B0578D" : 'black',
+            textDecoration: isActive ? 'underline' : 'none',
+            fontWeight : isActive ? 'semibold' : 'normal',
+            background: isActive ? 'transparent' : 'transparent'
+            })} to='/reviews'>Add Product</NavLink></li>
     <li><NavLink style={({ isActive }) => ({
-            color: isActive ? "#630A10" : 'black',
-            background: isActive ? '#FCF0C8' : 'white'
-            })} to='/contactUs'>Contact Us</NavLink></li>
+            color: isActive ? "#B0578D" : 'black',
+            textDecoration: isActive ? 'underline' : 'none',
+            fontWeight : isActive ? 'semibold' : 'normal',
+            background: isActive ? 'transparent' : 'transparent'
+            })} to='/contactUs'>My Cart</NavLink></li>
     </>
     const handleLogOut =() => {
       logOut()
@@ -27,7 +33,7 @@ const Header = () => {
       .catch(error => console.log(error))
    }
     return (
-        <div className="navbar bg-base-100 mb-12 md:mb-4">
+        <div className="navbar bg-[#FFE4D6] mb-12 md:mb-4">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -39,7 +45,7 @@ const Header = () => {
     </div>
     <div className="flex">
     <img src="/logo.png" className="w-16" alt="" />
-    <Link to='/'><a className="btn btn-ghost font-cursive font-bold normal-case text-dark text-4xl">Wedding Knot</a></Link>
+    <Link to='/'><a className="btn btn-ghost font-cursive font-bold normal-case text-[#B0578D] text-2xl md:text-4xl">Her Beauty</a></Link>
     </div>
   </div>
   <div className="navbar-center hidden lg:flex">
@@ -72,10 +78,8 @@ const Header = () => {
      <div className="md:flex ">
       <NavLink style={({ isActive }) => ({
             textDecoration : isActive ? 'underline' : 'none'
-            })} to='/login'><h1 className="text-dark font-semibold mr-4" href="">Login</h1></NavLink>
-     <NavLink style={({ isActive }) => ({
-            textDecoration : isActive ? 'underline' : 'none'
-            })}to='/register'><h1 className="text-dark font-semibold" href="">Register</h1></NavLink>
+            })} to='/login'><h1 className="text-[#B0578D] font-semibold mr-4" href="">Login/Register</h1></NavLink>
+     
      </div>
     }
    
