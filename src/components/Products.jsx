@@ -5,30 +5,31 @@ import ProductCard from "./ProductCard";
 
 const Products = () => {
     
-    const [brands, setBrands] = useState([]);
+    const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('/data.json')
+        fetch('http://localhost:5000/products')
         .then(res => res.json())
-        .then(data => setBrands(data))
+        .then(data => setProducts(data))
     }, [])
 
-    console.log(brands);
+    console.log(setProducts);
 
-    
+    const brands = useLoaderData();
     const { id } = useParams();
     const idInt = parseInt(id);
     const brand = brands.find(brand => brand.id == idInt);
     console.log(brand);
 
-    const products = useLoaderData();
-    console.log(products);
-    // const products = loadedProducts.filter(prod => brand.name === prod.name)
-    // console.log(products);
+
+    
+    const selected = products.filter(prod => prod.brand == brand.name);
+    console.log(selected);
     return (
         <div >
+            {/* <h1>{brand.name}</h1> */}
             <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-4 md:px-0 gap-4 my-24">
                 {
-                    products.map(product => <ProductCard product={product}
+                    selected.map(product => <ProductCard product={product}
                          key={product._id}></ProductCard>)
                 }
             </div>

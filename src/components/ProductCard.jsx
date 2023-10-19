@@ -3,8 +3,8 @@ import { BsStarFill } from 'react-icons/bs';
 const ProductCard = ({product}) => {
     const {_id, name, image, brand, type, rating, price} = product
     return (
-        <div className=" bg-base-100 shadow-xl">
-            <figure className="w-full h-3/5"><img className="w-full h-full" src={image} alt="Shoes" /></figure>
+        <div className="card bg-base-100 shadow-xl">
+            <figure className="card-compact w-full h-3/5"><img className="w-full h-full" src={image} alt="Shoes" /></figure>
             <div className="px-4">
                 <h2 className="card-title">{name}</h2>
                 <p className="text-center">{brand}</p>
