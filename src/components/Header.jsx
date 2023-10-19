@@ -19,7 +19,7 @@ const Header = () => {
             textDecoration: isActive ? 'underline' : 'none',
             fontWeight : isActive ? 'semibold' : 'normal',
             background: isActive ? 'transparent' : 'transparent'
-            })} to='/reviews'>Add Product</NavLink></li>
+            })} to='/addProduct'>Add Product</NavLink></li>
     <li><NavLink style={({ isActive }) => ({
             color: isActive ? "#B0578D" : 'black',
             textDecoration: isActive ? 'underline' : 'none',

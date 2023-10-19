@@ -5,7 +5,7 @@
     },
     {
         "id" : 2,
-      "name": "MAC Cosmetics",
+      "name": "MAC",
       "photo": "https://i.ibb.co/Gnw16Vz/mac.jpg"
     },
     {
@@ -15,12 +15,12 @@
     },
     {
         "id" : 4,
-      "name": "Estée Lauder",
+      "name": "Estee Lauder",
       "photo": "https://i.ibb.co/h12xk8Y/Logo1-Estee-Lauder.jpg"
     },
     {
         "id" : 5,
-      "name": "NARS Cosmetics",
+      "name": "NARS",
       "photo": "https://i.ibb.co/7S2w5LX/nars.jpg"
     },
     {
