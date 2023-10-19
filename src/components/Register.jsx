@@ -66,9 +66,9 @@ const Register = () => {
     <div className="text-center lg:text-left">
       <h1 className="text-5xl text-dark font-bold">Register now!</h1>
     </div>
-    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-transparent">
+    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl glass">
       <form onSubmit={handleRegister} className="card-body">
-      <div className="form-contro">
+      <div className="form-control">
           <label className="label">
             <span className="label-text">Your Name</span>
           </label>
@@ -97,9 +97,9 @@ const Register = () => {
             
           } hover:bg-[#D988B9] btn-primary">Register</button>
           <p className="text-center mt-4">Or</p>
-          <p className="text-center">Sign in with <button onClick={handleGoogleSignIn} className="btn text-light btn-link">Google</button></p>
+          <p className="text-center">Sign in with <button onClick={handleGoogleSignIn} className="btn text-dark btn-link">Google</button></p>
         </div>
-        <p>Already have an account? Please <Link to='/login'><button className="btn text-light btn-link">Login</button></Link></p>
+        <p>Already have an account? Please <Link to='/login'><button className="btn text-dark btn-link">Login</button></Link></p>
        
       </form>
       <ToastContainer></ToastContainer>

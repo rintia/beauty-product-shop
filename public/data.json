@@ -1,0 +1,32 @@
+[
+    { "id" : 1,
+      "name": "L'Oreal",
+      "photo": "https://i.ibb.co/tChzPXx/download.png"
+    },
+    {
+        "id" : 2,
+      "name": "MAC Cosmetics",
+      "photo": "https://i.ibb.co/Gnw16Vz/mac.jpg"
+    },
+    {
+        "id" : 3,
+      "name": "Maybelline",
+      "photo": "https://i.ibb.co/D4yxFpP/maybeline.jpg"
+    },
+    {
+        "id" : 4,
+      "name": "Estée Lauder",
+      "photo": "https://i.ibb.co/h12xk8Y/Logo1-Estee-Lauder.jpg"
+    },
+    {
+        "id" : 5,
+      "name": "NARS Cosmetics",
+      "photo": "https://i.ibb.co/7S2w5LX/nars.jpg"
+    },
+    {
+        "id" : 6,
+      "name": "Clinique",
+      "photo": "https://i.ibb.co/VVDMbzL/clinique.png"
+    }
+  ]
+  

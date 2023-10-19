@@ -45,7 +45,7 @@ const Login = () => {
     <div className="text-center lg:text-left">
       <h1 className="text-5xl text-white font-bold text-dark">Login now!</h1>
     </div>
-    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-transparent ">
+    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl glass ">
       <form onSubmit={handleLogin} className="card-body">
         <div className="form-control">
           <label className="label">
@@ -63,10 +63,10 @@ const Login = () => {
         <div className="form-control mt-6">
           <button className="btn border-none bg-dark  hover:bg-[#D988B9] btn-primary">Login</button>
           <p className="text-center mt-4">Or</p>
-          <p className="text-center">Sign in with <button onClick={handleGoogleSignIn} className="btn text-light btn-link">Google</button></p>
+          <p className="text-center">Sign in with <button onClick={handleGoogleSignIn} className="btn text-dark btn-link">Google</button></p>
           <ToastContainer></ToastContainer>
         </div>
-        <p>New here? Please <Link to='/register'><button className="btn btn-link text-light">Register</button></Link></p>
+        <p>New here? Please <Link to='/register'><button className="btn btn-link text-dark">Register</button></Link></p>
       </form>
     </div>
   
