@@ -4,7 +4,7 @@ const Reviews = () => {
     return (
         <div className="my-24 max-w-screen-xl mx-auto">
             <h1 className="text-4xl font-semibold text-dark text-center mb-12">Happy Customers</h1>
-            <div className=" grid grid-cols-1 md:grid-cols-2 gap-12 ">
+            <div className=" grid grid-cols-1 md:grid-cols-2 gap-12 px-8 ">
             <div className="bg-light p-8 rounded-lg">
                 <div className="relative">
                     
