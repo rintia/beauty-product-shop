@@ -25,7 +25,7 @@ const Header = () => {
             textDecoration: isActive ? 'underline' : 'none',
             fontWeight : isActive ? 'semibold' : 'normal',
             background: isActive ? 'transparent' : 'transparent'
-            })} to='/contactUs'>My Cart</NavLink></li>
+            })} to='/myCart'>My Cart</NavLink></li>
     </>
     const handleLogOut =() => {
       logOut()
