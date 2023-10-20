@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from './Banner';
 import { useLoaderData } from 'react-router-dom';
 import BrandCard from './BrandCard';
+import Reviews from './Reviews';
 
 const Home = () => {
     const brands = useLoaderData();
@@ -17,6 +18,7 @@ const Home = () => {
                 </div>
 
             </div>
+            <Reviews></Reviews>
         </div>
     );
 };

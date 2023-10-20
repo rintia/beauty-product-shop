@@ -44,7 +44,7 @@ const CartCard = ({cart, myCart, setMyCart}) => {
 
     return (
         <div className="card border card-side bg-base-100 rounded-md">
-  <figure><img className='w-32' src={image} alt="Movie"/></figure>
+  <figure><img className='w-32 px-2' src={image} alt="Movie"/></figure>
   <div className="card-body">
     <h2 className="card-title">{name}</h2>
     <p>Price:  {price}$</p>

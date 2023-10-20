@@ -10,7 +10,7 @@ const MyCart = () => {
     console.log(loadedMyCart);
     const [myCart, setMyCart] = useState(loadedMyCart);
     return (
-        <div className='min-h-screen my-12'>
+        <div className='min-h-screen my-12 px-4'>
            
            <div className='max-w-screen-md mx-auto space-y-6'>
            {
