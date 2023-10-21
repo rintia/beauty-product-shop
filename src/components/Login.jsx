@@ -1,7 +1,7 @@
 import { AuthContext } from "../AuthProvider";
 import { Link, useLocation, useNavigate} from "react-router-dom";
 import { useContext } from "react";
-import { ToastContainer, toast } from 'react-toastify';
+import {  toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
@@ -64,7 +64,6 @@ const Login = () => {
           <button className="btn border-none bg-dark  hover:bg-[#D988B9] btn-primary">Login</button>
           <p className="text-center mt-4">Or</p>
           <p className="text-center">Sign in with <button onClick={handleGoogleSignIn} className="btn text-dark btn-link">Google</button></p>
-          <ToastContainer></ToastContainer>
         </div>
         <p>New here? Please <Link to='/register'><button className="btn btn-link text-dark">Register</button></Link></p>
       </form>

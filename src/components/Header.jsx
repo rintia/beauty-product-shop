@@ -55,7 +55,7 @@ const Header = ({handleThemeSwitch, theme, setTheme}) => {
       {navLinks}
     </ul>
   </div>
-  <div className="navbar-end flex gap-4">
+  <div className="navbar-end flex gap-0 md:gap-4">
   <button onClick={handleThemeSwitch} className='btn btn-outline text-dark'>
     {theme === 'dark' ? <FaSun className=" text-2xl text-amber-200"></FaSun> : 
     <MdModeNight className=" text-2xl"></MdModeNight>}</button>

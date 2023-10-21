@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../AuthProvider";
-import { ToastContainer, toast } from "react-toastify";
+import {  toast } from "react-toastify";
 import { updateProfile } from "firebase/auth";
 
 
@@ -102,7 +102,6 @@ const Register = () => {
         <p>Already have an account? Please <Link to='/login'><button className="btn text-dark btn-link">Login</button></Link></p>
        
       </form>
-      <ToastContainer></ToastContainer>
     </div>
   </div>
 </div>

@@ -19,8 +19,8 @@ const Home = () => {
 
             <Banner></Banner>
 
-            <div className='max-w-screen-xl mx-auto'>
-                <h1 className='text-2xl font-semibold text-dark text-center mt-12 mb-12'>Brands</h1>
+            <div className='max-w-screen-xl mx-auto mt-24'>
+                <h1 className='text-5xl font-semibold text-dark text-center mt-12 mb-12'>Brands</h1>
                 <div className='grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-24 px-4 md:px-0'>
                     {
                         brands.map(brand => <BrandCard key={brand.id} brand={brand}></BrandCard>)
