@@ -12,7 +12,7 @@ const Details = () => {
 
     const handleAddtoCart = () => {
         const cart = { email, name, image, price};
-        fetch('https://brand-shop-server-3zg9avtcs-rintias-projects.vercel.app/carts', {
+        fetch('https://brand-shop-server-omega.vercel.app/carts', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

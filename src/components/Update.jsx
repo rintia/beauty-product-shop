@@ -22,7 +22,7 @@ const Update = () => {
 
         console.log(updatedProduct);
 
-        fetch(`https://brand-shop-server-3zg9avtcs-rintias-projects.vercel.app/products/${_id}`, {
+        fetch(`https://brand-shop-server-omega.vercel.app/products/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -52,7 +52,7 @@ const Update = () => {
             <div className="md:flex mb-8">
                 <div className="form-control md:w-1/2">
                     <label className="label">
-                        <span className="label-text">Product Name</span>
+                        <span className="label-text text-dark">Product Name</span>
                     </label>
                     <label className="input-group">
                         <input defaultValue={name} type="text" name="name" placeholder="Product Name" className="input input-bordered w-full" />
@@ -60,7 +60,7 @@ const Update = () => {
                 </div>
                 <div className="form-control md:w-1/2 md:ml-4">
                     <label className="label">
-                        <span className="label-text">Image URL</span>
+                        <span className="label-text text-dark">Image URL</span>
                     </label>
                     <label className="input-group">
                         <input defaultValue={image} type="text" name="image" placeholder="Image Url" className="input input-bordered w-full" />
@@ -71,7 +71,7 @@ const Update = () => {
             <div className="md:flex mb-8">
                 <div className="form-control md:w-1/2">
                     <label className="label">
-                        <span className="label-text">Brand Name</span>
+                        <span className="label-text text-dark">Brand Name</span>
                     </label>
                     <label className="input-group">
                         <input defaultValue={brand} type="text" name="brand" placeholder="Brand Name" className="input input-bordered w-full" />
@@ -79,7 +79,7 @@ const Update = () => {
                 </div>
                 <div className="form-control md:w-1/2 md:ml-4">
                     <label className="label">
-                        <span className="label-text">Type</span>
+                        <span className="label-text text-dark">Type</span>
                     </label>
                     <label className="input-group">
                         <input defaultValue={type} type="text" name="type" placeholder="Type" className="input input-bordered w-full" />
@@ -90,7 +90,7 @@ const Update = () => {
             <div className="md:flex mb-8">
                 <div className="form-control md:w-1/2">
                     <label className="label">
-                        <span className="label-text">Price</span>
+                        <span className="label-text text-dark">Price</span>
                     </label>
                     <label className="input-group">
                         <input defaultValue={price} type="text" name="price" placeholder="Price" className="input input-bordered w-full" />
@@ -98,7 +98,7 @@ const Update = () => {
                 </div>
                 <div className="form-control md:w-1/2 md:ml-4">
                     <label className="label">
-                        <span className="label-text">Rating</span>
+                        <span className="label-text text-dark">Rating</span>
                     </label>
                     <label className="input-group">
                         <input defaultValue={rating} type="text" name="rating" placeholder="rating" className="input input-bordered w-full" />

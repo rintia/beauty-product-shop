@@ -1,9 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../AuthProvider";
 import { useContext } from "react";
+import { MdModeNight } from "react-icons/md";
+import { FaSun } from "react-icons/fa";
 
 
-const Header = () => {
+const Header = ({handleThemeSwitch, theme, setTheme}) => {
   const { user, logOut } = useContext(AuthContext)
   console.log(user);
     const navLinks = <>
@@ -53,7 +55,11 @@ const Header = () => {
       {navLinks}
     </ul>
   </div>
-  <div className="navbar-end">
+  <div className="navbar-end flex gap-4">
+  <button onClick={handleThemeSwitch} className='btn btn-outline text-dark'>
+    {theme === 'dark' ? <FaSun className=" text-2xl text-amber-200"></FaSun> : 
+    <MdModeNight className=" text-2xl"></MdModeNight>}</button>
+     
     { user?.email ? <div className="dropdown dropdown-end">
                             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
@@ -79,7 +85,7 @@ const Header = () => {
       <NavLink style={({ isActive }) => ({
             textDecoration : isActive ? 'underline' : 'none'
             })} to='/login'><h1 className="text-[#B0578D] font-semibold mr-4" href="">Login/Register</h1></NavLink>
-     
+      
      </div>
     }
    
